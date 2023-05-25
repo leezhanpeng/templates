@@ -5,7 +5,7 @@
 </head>
 <body>
   <div class ="whole-thing">
-    <img class="image" src="{{ url_for('static',filename='mindeflogo.jpg') }}" alt="MINDEF logo">
+    <a href="../"><img class="image" src="{{ url_for('static',filename='mindeflogo.jpg') }}" alt="MINDEF logo"></a>
     <h1>MINDEF/SAF Speech Video Generator</h1>
     <p class="paragraph">
       Please wait while we get your video generated. This may take a while.
@@ -13,7 +13,7 @@
     <div class="loading-container">
       <div class="loader"></div>
     </div>
-    <a href="complete"><button>HIDDEN</button></a>
+    <a href="complete"><button hidden>HIDDEN</button></a>
   </div>
 </body>
 </html>
