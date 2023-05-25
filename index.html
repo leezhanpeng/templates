@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles.css') }}">
 </head>
 <body>
   <div class="container">
-    <img class="image" src="mindeflogo.jpg" alt="MINDEF logo">
+    <img class="image" src="{{ url_for('static',filename='mindeflogo.jpg') }}" alt="MINDEF logo">
     <h1>MINDEF/SAF Speech Video Generator</h1>
     <p class="paragraph">Welcome to the MINDEF/SAF Speech Video Generator. This state-of-the-art AI product can improve productivity 
       by allowing users to generate a video of them giving a speech in their own voice from a user-input script. 
