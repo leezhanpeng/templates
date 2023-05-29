@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='loadstyles.css') }}">
+  <script>
+      function navigate() {
+        window.location.href = 'loaded_part1';
+      }
+      fetch('generate_audio').then(navigate);
+   </script>
+</head>
+<body>
+  <div class ="whole-thing">
+    <a href="completed">
+      <img class="image" src="{{ url_for('static',filename='mindeflogo.jpg') }}" alt="MINDEF logo">
+    </a>
+    <h1>MINDEF/SAF Speech Video Generator (LINGUAVOX)</h1>
+    <p class="paragraph">
+      Please wait while we complete the last part of the video generation completed. This may take a while.
+    </p>
+    <a href="complete">
+    <div class="loading-container">
+      <div class="loader"></div>
+    </div>
+    </a>
+  </div>
+</body>
+</html>
