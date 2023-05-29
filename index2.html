@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles.css') }}">
+</head>
+<body>
+  <div class="container">
+    <img class="image" src="{{ url_for('static',filename='mindeflogo.jpg') }}" alt="MINDEF logo">
+    <h1>MINDEF/SAF Speech Video Generator (LINGUAVOX)</h1>
+    <p class="paragraph">Welcome to the MINDEF/SAF Speech Video Generator. You are currently on the second part of the video generation. Click on the button below to begin.</p>
+    <form method='POST' class="submissionform" enctype='multipart/form-data'>
+      {{form.hidden_tag()}}
+      {{form.submit()}}
+    </form>
+  </div>
+</body>
+</html>
