@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='loadedstyles.css') }}">
+</head>
+<body>
+  <div class ="whole-thing">
+     <a href="../"><img class="image" src="{{ url_for('static',filename='mindeflogo.jpg') }}" alt="MINDEF logo"></a>
+    <h1>MINDEF/SAF Speech Video Generator (LINGUAVOX)</h1>
+    <p class="paragraph">
+        Video generated.
+    </p>
+    <div class = "video">
+        <video controls>
+            <source src="{{ url_for('static',filename='output_vid.mp4') }}" type="video/mp4">
+        </video>
+    </div>
+  </div>
+</body>
+</html>
